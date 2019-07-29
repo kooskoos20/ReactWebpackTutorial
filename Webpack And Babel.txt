@@ -14,3 +14,12 @@ Webpack and Babel
 
     "build": "webpack --mode production", //specify mode development, production, none
     "start": "webpack-dev-server --hot --mode development --open"   //--hot reloading --open browser
+
+Flow of control
+    - npm run start
+        run start script from package.json
+    - webpack-dev-server starts
+    - it uses webpack.config.js file to see the entry point as index.js
+    - It creates bundle.js at root folder with ES5 syntax
+    - It server the index.html from root, if somewhere else mention it in contentBase in devServer in config file
+    - index.html has bundles.js as script
