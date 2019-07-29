@@ -1,4 +1,5 @@
 let path = require("path")  //path is an inbuilt nodejs plugin for paths
+                            // require and module.export is nodejs way of import and export of ES6 
 module.exports = {          //exports it as a module(node js common practice)
     entry:"./src/index.js", //entry point for webpack, start transpiling and bundling from here
     output:{                //All output configurations
