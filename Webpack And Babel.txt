@@ -1,0 +1,16 @@
+Webpack and Babel
+
+    Webpack:    It is used for transforming and bundling
+                It bundles all the code together to deploy
+                It transforms or transpiles new ES6 to ES5 for all old browsers using Babel(transpiler).
+                Uses loaders for transpiling.
+    
+    Babel:      It is a transpiler.
+                Webpack uses babel loader for it.
+                It has a babel-loader which uses @babel/core engine for the task.
+                Presets are plugins used by the loader to help in transpiling.
+                    -   babel-env   ES6 to ES5
+                    -   babel-react JSX to ES5
+
+    "build": "webpack --mode production", //specify mode development, production, none
+    "start": "webpack-dev-server --hot --mode development --open"   //--hot reloading --open browser

@@ -1,0 +1,3 @@
+{
+    "presets": ["@babel/preset-env", "@babel/preset-react"]     //array of presets to use env for ES6 and react for JSX
+}
